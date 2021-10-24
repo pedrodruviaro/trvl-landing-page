@@ -6,11 +6,13 @@
     color: $light;
 
     position: fixed;
-    z-index: 2;
+    top: 0;
+    z-index: 999;
     padding: 1rem;
-    width: calc(100% - 2rem);
-
-    transition: background-color 0.3s ease-in-out;
+    width: 100vw;
+    max-width: calc(100% - 2rem);
+    transition: background-color 0.3s linear;
+    backface-visibility: hidden;
 
     > span {
         font-weight: 600;
